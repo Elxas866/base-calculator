@@ -37,6 +37,18 @@ function calc() {
         console.log(result)
         document.getElementById("output").value = result.toString(base)
 
+    }else if (input.includes("%")){
+        var input_array = input.split("%")
+        let result = parseInt(input_array[0], base) % parseInt(input_array[1], base)
+        console.log(result)
+        document.getElementById("output").value = result.toString(base)
+
+    }else if (input.includes("^")){
+        var input_array = input.split("^")
+        let result = parseInt(input_array[0], base) ** parseInt(input_array[1], base)
+        console.log(result)
+        document.getElementById("output").value = result.toString(base)
+
     }else {
         var input_array = []
         document.getElementById("output").value = "Error"
