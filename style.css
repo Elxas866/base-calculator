@@ -52,6 +52,7 @@ body {
 .credits {
     text-align: center;
     margin-top: 3%;
+    font-size: 120%;
 }
 
 .credits h2 {
@@ -61,6 +62,7 @@ body {
 .howitworks {
     text-align: center;
     margin-top: 3%;
+    font-size: 120%;
 }
 
 .howitworks h2 {
