@@ -1,3 +1,8 @@
+function reload() {
+    location.reload();
+}
+
+
 let input = document.getElementById("input").value
 let basenum = document.getElementById("base").options.selectedIndex //0 = binary, 1 = octal, 2 = decimal, 3 = hexadecimal
 console.log(basenum)
@@ -11,7 +16,7 @@ if (basenum == 0) {
     var base = 16
 }
 
-//generate array [item 0, item1]
+//calculate
 if (input.includes("+")){
     var input_array = input.split("+")
     let result = parseInt(input_array[0], base) + parseInt(input_array[1], base)
