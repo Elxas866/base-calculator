@@ -40,6 +40,18 @@ body {
     cursor: pointer;
 }
 
+#gobtn {
+    font-size: 120%;
+}
+
+#gobtn:hover {
+    cursor: pointer;
+}
+
+#gobtndiv {
+    margin-top: 2%;
+}
+
 .credits {
     text-align: center;
     margin-top: 3%;
