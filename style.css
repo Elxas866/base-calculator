@@ -9,8 +9,40 @@ body {
     color: darkslategrey;
 }
 
-#info {
+.info {
     text-align: center;
     font-size: 120%;
     margin-top: 5%;
+}
+
+.main {
+    background-color: wheat;
+    text-align: center;
+    margin-top: 7%;
+    padding: 2%;
+}
+
+.main textarea {
+    font-size: 120%;
+}
+
+#base {
+    font-size: 120%;
+}
+
+#base:hover {
+    cursor: pointer;
+}
+
+#base option:hover {
+    cursor: pointer;
+}
+
+.credits {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.credits h3 {
+    text-decoration: underline;
 }

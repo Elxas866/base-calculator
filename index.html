@@ -10,10 +10,26 @@
 </head>
 <body>
     <h1 id="header">Base calculator</h1>
-    <div id="info">
-        <p>Base calculator is a free to use and open source tool to calculate numbers within different bases like Oktal,
+    <div class="info">
+        <p>Base calculator is a free to use and open source tool to calculate numbers within different bases like Octal,
             Hexadezimal, binary, and so on...
         </p>
+    </div>
+    <div class="main">
+        <p>Select the base:</p>
+        <select name="base" id="base">
+            <option value="bin">Binary</option>
+            <option value="oct">Octal</option>
+            <option value="hex">Hexadezimal</option>
+        </select>
+        <p>Enter your calculation:</p>
+        <textarea name="input" id="input" cols="30" rows="2"></textarea>
+        <p>Here is the result:</p>
+        <textarea readonly=true name="output" id="output" cols="30" rows="2"></textarea>
+    </div>
+    <div class="credits">
+        <h3>Credits</h3>
+        <p>Elias Kelta (<a href="mailto:eliaskelta1@gmail.com">eliaskelta1@gmail.com</a>)</p>
     </div>
 </body>
 </html>
