@@ -20,14 +20,16 @@ body {
     text-align: center;
     margin-top: 7%;
     padding: 2%;
+    font-size: 120%;
+    border-radius: 5px;
 }
 
 .main textarea {
-    font-size: 120%;
+    font-size: 100%;
 }
 
 #base {
-    font-size: 120%;
+    font-size: 100%;
 }
 
 #base:hover {
