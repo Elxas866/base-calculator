@@ -22,10 +22,11 @@ body {
     padding: 2%;
     font-size: 120%;
     border-radius: 5px;
+    box-shadow: rgb(172, 156, 125) 3px 3px 3px;
 }
 
 .main textarea {
-    font-size: 100%;
+    font-size: 120%;
 }
 
 #base {
@@ -36,12 +37,8 @@ body {
     cursor: pointer;
 }
 
-#base option:hover {
-    cursor: pointer;
-}
-
 #gobtn {
-    font-size: 120%;
+    font-size: 140%;
 }
 
 #gobtn:hover {
@@ -59,4 +56,16 @@ body {
 
 .credits h3 {
     text-decoration: underline;
+}
+
+
+
+@media all and (max-width: 600px){
+    #base {
+        font-size: 140%;
+    }
+
+    .main textarea {
+        font-size: 120%;
+    }
 }
