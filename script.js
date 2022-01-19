@@ -1,5 +1,5 @@
 function reload() {
-    location.reload();
+    location.reload(false);
 }
 
 
