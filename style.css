@@ -37,15 +37,16 @@ body {
     cursor: pointer;
 }
 
-#gobtn {
+#calcbtn {
     font-size: 140%;
+    box-shadow: gray 2px 2px 2px;
 }
 
-#gobtn:hover {
+#calcbtn:hover {
     cursor: pointer;
 }
 
-#gobtndiv {
+#calcbtndiv {
     margin-top: 2%;
 }
 
