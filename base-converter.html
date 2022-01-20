@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Base calculator</a>
+    </div>
+    <h1 id="header">Base converter</h1>
+    <div class="info">
+        <p>Base converter is a free to use and open source tool to convert numbers between differnt number-systems.</p>
+    </div>
+    <div class="main">
+        <p>Select the input base:</p>
+        <select name="inbase" id="inbase">
+            <option value="bin">2 (Binary)</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="oct">8 (Octal)</option>
+            <option selected="selected" value="dec">10 (Decimal)</option>
+            <option value="hex">16 (Hexadecimal)</option>
+        </select>
+        <p>Select the output base:</p>
+        <select name="outbase" id="outbase">
+            <option selected="selected" value="bin">2 (Binary)</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="oct">8 (Octal)</option>
+            <option value="dec">10 (Decimal)</option>
+            <option value="hex">16 (Hexadecimal)</option>
+        </select>
+        <p>Enter your number:</p>
+        <input type="number" name="input" id="input">
+        <p>Here is the result:</p>
+        <textarea readonly=true id="output" cols="21" rows="2"></textarea>
+        <div id="calcbtndiv">
+            <button id="calcbtn" onclick="convert()">convert!</button>
+        </div>
+    </div>
+    <div class="howitworks">
+        <h2>How it works</h2>
+        <p>The Algorithm is based on the parseInt()-Funktion in JavaScript; It converts the input string into a number with base n
+            and then converts it into your number with base x.
+        </p>
+    </div>
+    <div class="credits">
+        <h2>Credits</h2>
+        <p>Elias Kelta (<a href="mailto:eliaskelta1@gmail.com">eliaskelta1@gmail.com</a>)</p>
+        <p>Github: <a href="https://github.com/Elxas866/base-calculator">https://github.com/Elxas866/base-calculator</a></p>
+    </div>
+</body>
+<script src="convert.js"></script>
+</html>

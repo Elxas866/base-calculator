@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="nav">
+        <a href="base-converter.html">Base converter</a>
+    </div>
     <h1 id="header">Base calculator</h1>
     <div class="info">
         <p>Base calculator is a free to use and open source tool to calculate numbers with base n like Binary, Octal, Decimal
@@ -18,14 +21,14 @@
         <p>Select the base:</p>
         <select name="base" id="base">
             <option value="bin">2 (Binary)</option>
-            <option value="bin">4</option>
-            <option value="bin">6</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
             <option value="oct">8 (Octal)</option>
             <option value="dec">10 (Decimal)</option>
             <option value="hex">16 (Hexadecimal)</option>
         </select>
         <p>Enter your calculation:</p>
-        <textarea id="input" cols="30" rows="2" placeholder="You can use: +, -, *, /, %, ^"></textarea>
+        <textarea id="input" cols="30" rows="2" placeholder="You can use: +, -, *, ^, /, %"></textarea>
         <p>Here is the result:</p>
         <textarea readonly=true id="output" cols="30" rows="2"></textarea>
         <div id="calcbtndiv">
@@ -45,5 +48,5 @@
         <p>Github: <a href="https://github.com/Elxas866/base-calculator">https://github.com/Elxas866/base-calculator</a></p>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="calc.js"></script>
 </html>
