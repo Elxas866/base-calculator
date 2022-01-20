@@ -23,7 +23,7 @@
             <option value="6">6</option>
             <option value="oct">8 (Octal)</option>
             <option selected="selected" value="dec">10 (Decimal)</option>
-            <option value="hex">16 (Hexadecimal)</option>
+            <option onclick="hex()" value="hex">16 (Hexadecimal)</option>
         </select>
         <p>Select the output base:</p>
         <select name="outbase" id="outbase">
@@ -35,7 +35,7 @@
             <option value="hex">16 (Hexadecimal)</option>
         </select>
         <p>Enter your number:</p>
-        <input type="tel" name="input" id="input">
+        <input type="number" name="input" id="input">
         <p>Here is the result:</p>
         <textarea readonly=true id="output" cols="30" rows="2"></textarea>
         <div id="calcbtndiv">

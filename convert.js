@@ -37,3 +37,7 @@ function convert() {
     let output = parseInt(input, inbase).toString(outbase)
     document.getElementById("output").value = output
 }
+
+function hex() {
+    document.getElementById("input").type = "text"
+}
