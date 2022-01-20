@@ -21,15 +21,15 @@ function convert() {
 
     if (out_base == 0) {
         var outbase = 2
-    }else if (in_base == 1) {
+    }else if (out_base == 1) {
         var outbase = 4
-    }else if (in_base == 2) {
+    }else if (out_base == 2) {
         var outbase = 6
-    }else if (in_base == 3) {
+    }else if (out_base == 3) {
         var outbase = 8
-    }else if (in_base == 4) {
+    }else if (out_base == 4) {
         var outbase = 10
-    }else if (in_base == 5) {
+    }else if (out_base == 5) {
         var outbase = 16
     }
     console.log(outbase)
