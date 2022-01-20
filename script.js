@@ -19,31 +19,46 @@ function calc() {
     //calculate
     if (input.includes("*")){
         var input_array = input.split("*")
-        let result = parseInt(input_array[0], base) * parseInt(input_array[1], base)
+        let result=1
+        for (let i = 0; i < input_array.length; i++) {
+            result *= parseInt(input_array[i], base)
+        }
         console.log(result)
         document.getElementById("output").value = result.toString(base)
 
     }else if (input.includes("^")){
         var input_array = input.split("^")
-        let result = parseInt(input_array[0], base) ** parseInt(input_array[1], base)
+        let result = parseInt(input_array[0], base)
+        for (let i = 1; i < input_array.length; i++) {
+            result **= parseInt(input_array[i], base)
+        }
         console.log(result)
         document.getElementById("output").value = result.toString(base)
 
     }else if (input.includes("/")){
         var input_array = input.split("/")
-        let result = parseInt(input_array[0], base) / parseInt(input_array[1], base)
+        let result = parseInt(input_array[0], base)
+        for (let i = 1; i < input_array.length; i++) {
+            result /= parseInt(input_array[i], base)
+        }
         console.log(result)
         document.getElementById("output").value = result.toString(base)
 
     }else if (input.includes("%")){
         var input_array = input.split("%")
-        let result = parseInt(input_array[0], base) % parseInt(input_array[1], base)
+        let result = parseInt(input_array[0], base)
+        for (let i = 1; i < input_array.length; i++) {
+            result %= parseInt(input_array[i], base)
+        }
         console.log(result)
         document.getElementById("output").value = result.toString(base)
 
     }else if (input.includes("+")){
         var input_array = input.split("+")
-        let result = parseInt(input_array[0], base) + parseInt(input_array[1], base)
+        let result=0
+        for (let i = 0; i < input_array.length; i++) {
+            result += parseInt(input_array[i], base)
+        }
         console.log(result)
         document.getElementById("output").value = result.toString(base)
 
@@ -54,7 +69,10 @@ function calc() {
         }else {
             var input_array = input.split("-")
         }
-        let result = parseInt(input_array[0], base) - parseInt(input_array[1], base)
+        let result=parseInt(input_array[0], base)
+        for (let i = 1; i < input_array.length; i++) {
+            result -= parseInt(input_array[i], base)
+        }
         console.log(result)
         document.getElementById("output").value = result.toString(base)
 
