@@ -4,6 +4,11 @@ body {
     margin-top: 0;
 }
 
+::selection {
+    color: white;
+    background-color: darkslategrey;
+}
+
 a {
     color: darkslategrey;
 }
@@ -61,7 +66,7 @@ a {
 
 #calcbtn {
     font-size: 140%;
-    box-shadow: gray 2px 2px 2px;
+    box-shadow: gray 1px 1px;
 }
 
 #calcbtn:hover {
