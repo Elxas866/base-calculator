@@ -31,18 +31,17 @@
             <option value="hex">16 (Hexadecimal)</option>
         </select>
         <p>Enter your text:</p>
-        <textarea id="input" cols="30" rows="3" placeholder="Type anything..."></textarea>
+        <textarea id="input" cols="30" rows="5" placeholder="Type anything..."></textarea>
         <p>Here is the result:</p>
-        <textarea readonly=true id="output" cols="30" rows="3"></textarea>
+        <textarea readonly=true id="output" cols="30" rows="5"></textarea>
         <div id="calcbtndiv">
             <button id="calcbtn" onclick="text()">convert!</button>
         </div>
     </div>
     <div class="howitworks">
         <h2>How it works</h2>
-        <p>The Algorithm is based on the parseInt()-function in JavaScript; It converts the input string into two numbers with base n, seperatet by
-            the arithmetic operator. It then calculates the two numbers and converts the output from a number with base n back to string and then
-            prints the result.
+        <p>The algorithm is based on the charCodeAt()-function in JavaScript; It iterates through the input string and reads the elements
+            UNICODE index. It then converts the decimal number into a number with base n and outputs the result.
         </p>
     </div>
     <div class="credits">
