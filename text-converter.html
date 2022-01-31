@@ -32,10 +32,13 @@
         </select>
         <p>Enter your text:</p>
         <textarea id="input" cols="30" rows="5" placeholder="All languages are supported! You can also use emojis."></textarea>
+        <div id="calcbtndiv">
+            <button id="calcbtn" onclick="text()">convert!</button>
+        </div>
         <p>Here is the result:</p>
         <textarea readonly=true id="output" cols="30" rows="5"></textarea>
         <div id="calcbtndiv">
-            <button id="calcbtn" onclick="text()">convert!</button>
+            <button id="calcbtn" onclick="copy()">📋</button>
         </div>
     </div>
     <div class="howitworks">

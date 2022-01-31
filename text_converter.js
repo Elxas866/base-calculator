@@ -23,3 +23,10 @@ function text() {
     let result = parseInt(dec_string)
     document.getElementById("output").value = result.toString(base)
 }
+
+function copy() {
+    let copyText = document.getElementById("output");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    navigator.clipboard.writeText(copyText.value);
+}
